@@ -2,6 +2,7 @@ import Link from "next/link";
 
 const cards=[
  ["Dubbo Circular Learning","Explore short volunteer courses with enrolment, practical lessons, checks and saved progress. Uses the shared volunteer account (separate from this research sign-in).","https://dubbo-ewaste-app.vercel.app/learn"],
+ ["Public options directory","Item-by-item referrals to operating Dubbo services, national recycling schemes, repair, reuse and hire options. Includes verified links, limits and a quick item finder.","/internal/public-options"],
  ["Research & evidence","The 10 biggest unresolved Dubbo questions, with verified facts, gaps and next evidence steps.","/internal/research"],
  ["Repair First","Deep evidence, implementation plan, 12-week pilot playbook and field tools for making repair the easy first choice.","/internal/repair-first"],
  ["Repair Café","Pilot design, volunteer roles, safety boundaries, intake and outcome measurement.","https://dubbo-ewaste-app.vercel.app/repair-cafe-volunteers"],

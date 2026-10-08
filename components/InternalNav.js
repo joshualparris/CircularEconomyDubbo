@@ -11,6 +11,7 @@ export function InternalNav({ role }) {
       <nav className="internal-nav" aria-label="Internal navigation">
         <Link href="/internal">Dashboard</Link>
         <Link href="/internal/research">Research</Link>
+        <Link href="/internal/public-options">Public options</Link>
         <Link href="/internal/repair-first">Repair First</Link>
         <a href="https://dubbo-ewaste-app.vercel.app/repair-cafe-volunteers">Repair Café</a>
         <Link href="/internal/library-of-things">Library of Things</Link>

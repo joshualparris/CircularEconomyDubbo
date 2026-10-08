@@ -68,3 +68,10 @@ The research treats repair as a system-design problem, not just an environmental
 - The Circular Economy research-code login is still a **separate session**; a research-code session does not automatically authenticate the LMS. Never pretend these are single sign-on until an actual unified identity flow exists.
 - The Library of Things programme membership and separate signup code must be configured in the volunteer account backend before library-only onboarding is available.
 - Research and feasibility pages continue to live here; training/course state belongs in the canonical learning hub.
+
+## Internal public referrals directory
+
+- Protected route: `/internal/public-options` (uses the existing signed staff/volunteer session).
+- Quick decision aid for an item's condition, plus searchable, filterable repair/reuse/recycling/borrowing links.
+- Entries live in `lib/public-resource-directory.js`; review against official providers before referring people. Checked 8 October 2026.
+- This is an **internal referral tool**, not a new public page or a promise that proposed services are operating. Existing public homepage and resident pages are deliberately unchanged.

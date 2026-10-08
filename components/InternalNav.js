@@ -10,7 +10,8 @@ export function InternalNav({ role }) {
       </div>
       <nav className="internal-nav" aria-label="Internal navigation">
         <Link href="/internal">Dashboard</Link>
-        <Link href="/internal/research">Research</Link>\n        <Link href="/internal/repair-first">Repair First</Link>
+        <Link href="/internal/research">Research</Link>
+        <Link href="/internal/repair-first">Repair First</Link>
         <Link href="/internal/repair-cafe">Repair Café</Link>
         <Link href="/internal/library-of-things">Library of Things</Link>
         <Link href="/internal/ewaste">E-waste</Link>

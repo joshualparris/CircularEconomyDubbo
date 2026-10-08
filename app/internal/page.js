@@ -8,6 +8,7 @@ const cards=[
  ["E-waste","Current known chain, data-bearing devices, downstream proof and questions for Council/contractors.","/internal/ewaste"],
  ["Partners & venues","Council, library, Men's Sheds, charities, repairers and other possible collaborators.","/internal/partners"],
  ["Field validation","The work that cannot be solved by another web search: audits, interviews, records and pilots.","/internal/fieldwork"],
+ ["Connected projects","All related websites, internal workspaces, GitHub repositories and supporting tools.","/internal/projects"],
 ];
 
 export default function InternalHome(){

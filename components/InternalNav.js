@@ -17,6 +17,7 @@ export function InternalNav({ role }) {
         <Link href="/internal/ewaste">E-waste</Link>
         <Link href="/internal/partners">Partners</Link>
         <Link href="/internal/fieldwork">Field validation</Link>
+        <Link href="/internal/projects">Projects</Link>
       </nav>
       <form action={logout}>
         <button className="button button-quiet" type="submit">Sign out</button>

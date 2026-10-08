@@ -15,6 +15,7 @@ export default async function LoginPage({searchParams}){
     <strong>Repair Café or DubboEwaste volunteer?</strong>
     <p>Use the shared volunteer and staff portal instead. Repair Café no longer has a separate login on this site.</p>
     <a className="button" href="https://dubbo-ewaste-app.vercel.app/login">Open shared volunteer portal →</a>
+    <p><a href="https://dubbo-ewaste-app.vercel.app/learn">Dubbo Circular Learning: courses and saved progress ↗</a></p>
    </div>
 
    {params?.error?<p className="error">{params.error}</p>:null}

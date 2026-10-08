@@ -1,30 +1,26 @@
 import Link from "next/link";
-import { login } from "./actions";
-
-export const metadata={title:"Circular economy research sign in"};
-
+import {login} from "./actions";
+export const metadata={title:"Circular Economy Research Sign In"};
 export default async function LoginPage({searchParams}){
  const params=await searchParams;
- return <div className="login-shell">
-  <div className="login-card">
-   <div className="kicker">Circular economy internal research</div>
-   <h1 style={{fontSize:"2.8rem"}}>Research workspace sign in</h1>
-   <p className="muted">This login is only for the broader Dubbo Circular Economy research workspace.</p>
-
+ return <div className="login-shell"><div className="login-card">
+   <div className="kicker">Dubbo Circular Economy · private research</div>
+   <h1>One volunteer sign-in</h1>
+   <p>Use the same account as DubboEwaste, Repair Café and Library of Things training. A secure one-time hand-off opens the research portal without another password.</p>
    <div className="notice">
-    <strong>Repair Café or DubboEwaste volunteer?</strong>
-    <p>Use the shared volunteer and staff portal instead. Repair Café no longer has a separate login on this site.</p>
-    <a className="button" href="https://dubbo-ewaste-app.vercel.app/login">Open shared volunteer portal →</a>
-    <p><a href="https://dubbo-ewaste-app.vercel.app/learn">Dubbo Circular Learning: courses and saved progress ↗</a></p>
+    <strong>Volunteer or staff member?</strong>
+    <p>Sign in through the shared portal. You'll come back here with a research session that expires after eight hours.</p>
+    <a className="button" href="https://dubbo-ewaste-app.vercel.app/circular-access">Open with my volunteer account →</a>
    </div>
-
-   {params?.error?<p className="error">{params.error}</p>:null}
-   <form className="form" action={login}>
-    <label>Circular economy research access code<input name="code" type="password" autoComplete="current-password" required /></label>
-    <button className="button button-secondary" type="submit">Sign in to research workspace</button>
-   </form>
-   <p className="private-note">This separate workspace contains broader circular-economy research such as Library of Things, fieldwork and partner research. Sessions expire automatically after eight hours.</p>
+   {params?.error?<p className="error" role="alert">{params.error}</p>:null}
+   <details style={{marginTop:"22px"}}>
+    <summary style={{cursor:"pointer",fontWeight:700}}>Legacy research access code (existing coordinators only)</summary>
+    <p className="muted">Kept temporarily for existing research coordinators. New volunteers should use the shared account above.</p>
+    <form className="form" action={login}>
+      <label>Existing research access code<input name="code" type="password" autoComplete="current-password" required/></label>
+      <button className="button button-secondary">Sign in with legacy code</button>
+    </form>
+   </details>
    <p className="small-link"><Link href="/">Back to public circular economy site</Link></p>
-  </div>
- </div>;
+  </div></div>;
 }

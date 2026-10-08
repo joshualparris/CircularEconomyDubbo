@@ -60,3 +60,11 @@ The research treats repair as a system-design problem, not just an environmental
 - `/internal/repair-first/implementation` — implementation plan
 - `/internal/repair-first/playbook` — 12-week pilot playbook
 - `/internal/repair-first/field-kit` — operational research forms and metrics
+
+## Shared volunteer learning hub
+
+- The canonical LMS lives within the DubboEwaste operational Next.js app at `https://dubbo-ewaste-app.vercel.app/learn`.
+- All three programmes can explore its catalogue; enrolments and lesson completions are per-authenticated-user in Supabase.
+- The Circular Economy research-code login is still a **separate session**; a research-code session does not automatically authenticate the LMS. Never pretend these are single sign-on until an actual unified identity flow exists.
+- The Library of Things programme membership and separate signup code must be configured in the volunteer account backend before library-only onboarding is available.
+- Research and feasibility pages continue to live here; training/course state belongs in the canonical learning hub.

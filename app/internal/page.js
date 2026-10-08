@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 const cards=[
- ["Research & evidence","The 10 biggest unresolved Dubbo questions, with verified facts, gaps and next evidence steps.","/internal/research"],
+ ["Research & evidence","The 10 biggest unresolved Dubbo questions, with verified facts, gaps and next evidence steps.","/internal/research"],\n ["Repair First research","Behaviour change, diagnosis, repair incentives, subsidies and local repair-system evidence.","/internal/repair-first"],
  ["Repair Café","Pilot design, volunteer roles, safety boundaries, intake and outcome measurement.","/internal/repair-cafe"],
  ["Library of Things","Demand test, starter inventory, risk controls, hosting and loan metrics.","/internal/library-of-things"],
  ["E-waste","Current known chain, data-bearing devices, downstream proof and questions for Council/contractors.","/internal/ewaste"],

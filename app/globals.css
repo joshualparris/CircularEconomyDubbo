@@ -116,3 +116,8 @@ th{font-size:12px;text-transform:uppercase;letter-spacing:.05em;color:var(--mute
  .banner{padding:26px}
  .internal-hero{display:block}
 }
+
+.markdown-lite{margin-top:24px;background:#fff;border:1px solid var(--line);border-radius:24px;padding:28px;max-width:980px}
+.markdown-lite h1{font-size:2.4rem;margin-top:1.4rem}.markdown-lite h2{font-size:1.8rem;margin-top:2.1rem}.markdown-lite h3{font-size:1.18rem;margin-top:1.5rem}
+.markdown-lite p{margin:.55rem 0;color:#33443e}.markdown-lite blockquote{margin:1rem 0;padding:12px 16px;border-left:4px solid var(--ochre);background:var(--ochre-soft);font-weight:750}
+.markdown-lite hr{border:0;border-top:1px solid var(--line);margin:28px 0}.md-space{height:8px}.md-bullet{display:flex;gap:8px;margin:5px 0 5px 14px;color:#33443e}

@@ -46,8 +46,17 @@ It must never turn a statewide comparator into a fabricated Dubbo statistic.
 ## Repair First Dubbo research
 
 - **[Deep repair-behaviour research](research/REPAIR-FIRST-DUBBO-DEEP-RESEARCH.md)** — evidence on repair cost, uncertainty, warranties, Repair Cafés, subsidies, repairability information, current Dubbo repair capacity, local funding routes and a ranked intervention stack.
-- **[8 October 2026 evidence update](research/REPAIR-FIRST-DUBBO-2026-EVIDENCE-UPDATE.md)** — newer behavioural evidence plus North Sydney/Sunshine Repair Café comparators, Vienna/France repair-bonus results, trust/convenience research, NSW funding precedents and the recommended 12-week Dubbo experiment.
+- **[8 October 2026 evidence update](research/REPAIR-FIRST-DUBBO-2026-EVIDENCE-UPDATE.md)** — newer behavioural evidence plus Australian repair research, current Austria/France repair-bonus evidence, trust/convenience research, NSW comparators and Dubbo funding/policy context.\n- **[Implementation plan](research/REPAIR-FIRST-DUBBO-IMPLEMENTATION-PLAN.md)** — Repair Check, local repair directory, incentives, Repair Café, referrals, capacity and measurement.\n- **[12-week pilot playbook](research/REPAIR-FIRST-DUBBO-PILOT-PLAYBOOK.md)** — baseline first, then a bounded instant-incentive test with guardrails and evaluation.\n- **[Field kit](research/REPAIR-FIRST-DUBBO-FIELD-KIT.md)** — repairer interviews, participant intake, outcomes, follow-up and dashboard metrics.
 - Core behaviour target: **Before you replace it, get one repair check.**
 - Recommended system: transparent Repair Check + local repair directory + quote/warranty standard + small instant repair bonus + Repair Café + donor parts/loaners where useful.
 
 The research treats repair as a system-design problem, not just an environmental-awareness campaign.
+
+
+### Internal Repair First routes
+
+- `/internal/repair-first` — workspace hub and full deep research
+- `/internal/repair-first/evidence` — 2026 evidence update
+- `/internal/repair-first/implementation` — implementation plan
+- `/internal/repair-first/playbook` — 12-week pilot playbook
+- `/internal/repair-first/field-kit` — operational research forms and metrics

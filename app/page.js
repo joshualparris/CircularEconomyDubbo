@@ -1,7 +1,9 @@
 import Link from "next/link";
 
+const REPAIR_CAFE_URL="https://dubbo-ewaste-app.vercel.app/repair-cafe-dubbo";
+
 const actions=[
-  {icon:"🛠️",title:"Repair it",text:"A small fix can be cheaper and simpler than replacing the whole thing.",href:"/repair-cafe"},
+  {icon:"🛠️",title:"Repair it",text:"A small fix can be cheaper and simpler than replacing the whole thing.",href:REPAIR_CAFE_URL},
   {icon:"♻️",title:"Reuse or donate it",text:"If it still works, keep the item as an item instead of turning it into material.",href:"/where-next"},
   {icon:"🤝",title:"Borrow instead of buy",text:"Some things are useful twice a year. Sharing can make more sense than owning.",href:"/library-of-things"},
   {icon:"↻",title:"Recycle it properly",text:"When reuse is finished, use the right recycling or disposal pathway.",href:"/where-next"},
@@ -26,7 +28,7 @@ export default function HomePage(){
         <p className="lede">Before something becomes waste, there may be a better next step: repair it, pass it on, borrow instead of buying, or recycle it properly when its useful life is really over.</p>
         <div className="actions">
           <Link className="button" href="/where-next">What can I do with this?</Link>
-          <Link className="button button-secondary" href="/repair-cafe">Repair Café idea</Link>
+          <a className="button button-secondary" href={REPAIR_CAFE_URL}>Repair Café idea</a>
         </div>
       </div>
       <div className="hero-art" aria-hidden="true">
@@ -37,7 +39,7 @@ export default function HomePage(){
 
     <section className="section">
       <div className="section-head"><div className="kicker">Four simple moves</div><h2>Circular economy without the jargon</h2></div>
-      <div className="card-grid">{actions.map(a=><Link className="card action-card" href={a.href} key={a.title}><div><div className="action-icon">{a.icon}</div><h3>{a.title}</h3><p>{a.text}</p></div><span className="small-link">See the next step →</span></Link>)}</div>
+      <div className="card-grid">{actions.map(a=>a.href.startsWith("http")?<a className="card action-card" href={a.href} key={a.title}><div><div className="action-icon">{a.icon}</div><h3>{a.title}</h3><p>{a.text}</p></div><span className="small-link">See the next step →</span></a>:<Link className="card action-card" href={a.href} key={a.title}><div><div className="action-icon">{a.icon}</div><h3>{a.title}</h3><p>{a.text}</p></div><span className="small-link">See the next step →</span></Link>)}</div>
     </section>
 
     <section className="section">
@@ -51,7 +53,7 @@ export default function HomePage(){
           <span className="status">Idea being tested</span>
           <h2 style={{marginTop:16}}>Repair Café Dubbo</h2>
           <p>A friendly place where people bring portable broken items, sit with volunteers and try to understand or repair them together.</p>
-          <Link className="small-link" href="/repair-cafe">See the public concept →</Link>
+          <a className="small-link" href={REPAIR_CAFE_URL}>Open Repair Café Dubbo & give feedback →</a>
         </article>
         <article className="card">
           <span className="status">Proposal</span>

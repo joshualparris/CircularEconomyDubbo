@@ -68,3 +68,10 @@ The research treats repair as a system-design problem, not just an environmental
 - The Circular Economy research-code login is still a **separate session**; a research-code session does not automatically authenticate the LMS. Never pretend these are single sign-on until an actual unified identity flow exists.
 - The Library of Things programme membership and separate signup code must be configured in the volunteer account backend before library-only onboarding is available.
 - Research and feasibility pages continue to live here; training/course state belongs in the canonical learning hub.
+
+
+## Shared volunteer sign-in (October 2026)
+The canonical sign-in for volunteers from DubboEwaste, Repair Café and Library of Things is at https://dubbo-ewaste-app.vercel.app/circular-access.
+After normal Supabase authentication in the operations/learning app, the user submits a one-time signed-in **POST** to app/auth/bridge/route.js. The bridge consumes an expiring, single-use, random ticket using the public RPC redeem_circular_handoff with only a Supabase publishable key (never a service-role key), and issues an eight-hour local research session. No passwords or long-lived credentials cross sites. The legacy access code remains available to existing coordinators under an expandable section until everyone has migrated.
+
+Vercel environment variables needed: SHARED_SUPABASE_URL (the existing DubboEwaste Supabase URL), SHARED_SUPABASE_PUBLISHABLE_KEY (public publishable key), SESSION_SECRET (already used for the existing signed session cookie). Never commit the SESSION_SECRET. Only the volunteer app may issue hand-off tickets after verifying active programme membership.

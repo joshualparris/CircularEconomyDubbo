@@ -65,7 +65,7 @@ The research treats repair as a system-design problem, not just an environmental
 
 - The canonical LMS lives within the DubboEwaste operational Next.js app at `https://dubbo-ewaste-app.vercel.app/learn`.
 - All three programmes can explore its catalogue; enrolments and lesson completions are per-authenticated-user in Supabase.
-- The Circular Economy research-code login is still a **separate session**; a research-code session does not automatically authenticate the LMS. Never pretend these are single sign-on until an actual unified identity flow exists.
+- The research workspace now supports a short-lived, one-time POST hand-off from an authenticated volunteer account on AssetFlow. The existing access-code login remains as a legacy fallback; it is not required for volunteers using the hand-off.
 - The Library of Things programme membership and separate signup code must be configured in the volunteer account backend before library-only onboarding is available.
 - Research and feasibility pages continue to live here; training/course state belongs in the canonical learning hub.
 
@@ -75,3 +75,11 @@ The research treats repair as a system-design problem, not just an environmental
 - Quick decision aid for an item's condition, plus searchable, filterable repair/reuse/recycling/borrowing links.
 - Entries live in `lib/public-resource-directory.js`; review against official providers before referring people. Checked 8 October 2026.
 - This is an **internal referral tool**, not a new public page or a promise that proposed services are operating. Existing public homepage and resident pages are deliberately unchanged.
+
+
+## Volunteer research sign-in
+- Open https://dubbo-ewaste-app.vercel.app/circular-access (or the button at /login).
+- Sign in with the common community programme account. Submit the one-time secure POST hand-off to app/auth/bridge/route.js.
+- The hand-off is redeemed with a Supabase publishable key using public.redeem_circular_handoff and creates a signed eight-hour research session.
+- Required Vercel environment variables are SHARED_SUPABASE_URL, SHARED_SUPABASE_PUBLISHABLE_KEY and the pre-existing SESSION_SECRET.
+- No service role key or permanent token crosses sites. Invalid/replayed/expired hand-off codes are rejected. Internal source routes remain gated by the signed session.

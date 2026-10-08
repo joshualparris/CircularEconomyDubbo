@@ -109,12 +109,71 @@ th{font-size:12px;text-transform:uppercase;letter-spacing:.05em;color:var(--mute
 @media(max-width:620px){
  .page{padding-left:18px;padding-right:18px}
  h1{font-size:3.2rem}
- .public-nav,.internal-nav{gap:10px}
+ .public-nav{gap:10px}
  .card-grid,.card-grid.two,.card-grid.three,.guide-grid,.internal-grid{grid-template-columns:1fr}
  .site-footer{flex-direction:column}
  .footer-links{text-align:left}
  .banner{padding:26px}
  .internal-hero{display:block}
+
+ /* Keep the signed-in workspace header compact on phones. */
+ .internal-header{
+   display:grid;
+   grid-template-columns:minmax(0,1fr) auto;
+   grid-template-areas:
+     "identity signout"
+     "nav nav";
+   gap:8px 12px;
+   align-items:center;
+   padding:10px 14px 8px;
+ }
+ .internal-header>div{
+   grid-area:identity;
+   min-width:0;
+ }
+ .internal-brand{
+   display:block;
+   min-width:0;
+   overflow:hidden;
+   text-overflow:ellipsis;
+   white-space:nowrap;
+   font-size:15px;
+   line-height:1.2;
+ }
+ .role-line{display:none}
+ .internal-header>form{
+   grid-area:signout;
+   margin:0;
+ }
+ .internal-header>form .button{
+   min-height:34px;
+   padding:7px 11px;
+   font-size:13px;
+   line-height:1;
+   white-space:nowrap;
+ }
+ .internal-nav{
+   grid-area:nav;
+   width:100%;
+   min-width:0;
+   display:flex;
+   flex-direction:row;
+   flex-wrap:nowrap;
+   gap:18px;
+   overflow-x:auto;
+   overscroll-behavior-x:contain;
+   -webkit-overflow-scrolling:touch;
+   scrollbar-width:none;
+   padding:3px 0 2px;
+   font-size:13px;
+ }
+ .internal-nav::-webkit-scrollbar{display:none}
+ .internal-nav a{
+   flex:0 0 auto;
+   white-space:nowrap;
+   padding:3px 0;
+ }
+ .internal-main{padding:24px 18px 64px}
 }
 
 .markdown-lite{margin-top:24px;background:#fff;border:1px solid var(--line);border-radius:24px;padding:28px;max-width:980px}

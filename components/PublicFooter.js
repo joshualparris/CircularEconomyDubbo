@@ -9,9 +9,9 @@ export function PublicFooter() {
       </div>
       <div className="footer-links">
         <Link href="/where-next">Resident guide</Link>
-        <Link href="/repair-cafe">Repair Café Dubbo</Link>
+        <a href="https://dubbo-ewaste-app.vercel.app/repair-cafe-dubbo">Repair Café Dubbo</a>
         <Link href="/library-of-things">Library of Things idea</Link>
-        <Link href="/login">Volunteer & staff sign in</Link>
+        <Link href="/login">Circular economy research sign in</Link>
       </div>
     </footer>
   );

@@ -9,9 +9,9 @@ export function PublicHeader() {
       </Link>
       <nav className="public-nav" aria-label="Main navigation">
         <Link href="/where-next">Where next?</Link>
-        <Link href="/repair-cafe">Repair Café</Link>
+        <a href="https://dubbo-ewaste-app.vercel.app/repair-cafe-dubbo">Repair Café</a>
         <Link href="/library-of-things">Library of Things</Link>
-        <Link className="quiet-link" href="/login">Volunteer / staff</Link>
+        <Link className="quiet-link" href="/login">Internal research</Link>
       </nav>
     </header>
   );

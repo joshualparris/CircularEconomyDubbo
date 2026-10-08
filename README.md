@@ -46,6 +46,7 @@ It must never turn a statewide comparator into a fabricated Dubbo statistic.
 ## Repair First Dubbo research
 
 - **[Deep repair-behaviour research](research/REPAIR-FIRST-DUBBO-DEEP-RESEARCH.md)** — evidence on repair cost, uncertainty, warranties, Repair Cafés, subsidies, repairability information, current Dubbo repair capacity, local funding routes and a ranked intervention stack.
+- **[8 October 2026 evidence update](research/REPAIR-FIRST-DUBBO-2026-EVIDENCE-UPDATE.md)** — newer behavioural evidence plus North Sydney/Sunshine Repair Café comparators, Vienna/France repair-bonus results, trust/convenience research, NSW funding precedents and the recommended 12-week Dubbo experiment.
 - Core behaviour target: **Before you replace it, get one repair check.**
 - Recommended system: transparent Repair Check + local repair directory + quote/warranty standard + small instant repair bonus + Repair Café + donor parts/loaners where useful.
 

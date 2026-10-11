@@ -1,0 +1,53 @@
+{
+  "date_sydney": "2026-10-10",
+  "privacy": "Counts below five are withheld, not reported as zero. Page views are events, not unique visitors. No private route paths, visitor identifiers, raw events or submission contents are included.",
+  "sites": {
+    "dubbo_ewaste": {
+      "page_views": 10,
+      "top_public_pages": [
+        {
+          "page_group": "/repair-cafe-dubbo",
+          "page_views": 9
+        }
+      ],
+      "clicks": "withheld_or_not_recorded",
+      "successful_logins": "withheld_or_not_recorded",
+      "devices": [
+        {
+          "device_class": "mobile",
+          "events": 15
+        }
+      ],
+      "locations": [
+        {
+          "country": "AU",
+          "region": "NSW",
+          "events": 14
+        }
+      ],
+      "referrers": [
+        {
+          "domain": "dubbo-ewaste-app.vercel.app",
+          "events": 14
+        }
+      ]
+    },
+    "github_pages": {
+      "page_views": "withheld_or_not_recorded",
+      "clicks": "withheld_or_not_recorded",
+      "successful_logins": "withheld_or_not_recorded"
+    },
+    "render_backup": {
+      "page_views": "withheld_or_not_recorded",
+      "clicks": "withheld_or_not_recorded",
+      "successful_logins": "withheld_or_not_recorded"
+    },
+    "circular_economy": {
+      "page_views": "withheld_or_not_recorded",
+      "clicks": "withheld_or_not_recorded",
+      "successful_logins": "withheld_or_not_recorded"
+    }
+  },
+  "source": "public.analytics_public_daily_report",
+  "source_verified": true
+}

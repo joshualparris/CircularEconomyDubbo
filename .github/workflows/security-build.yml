@@ -1,0 +1,32 @@
+name: Circular Economy security and build verification
+on:
+  pull_request:
+    paths: ['package.json', 'package-lock.json', 'app/**', 'lib/**', 'components/**', 'next.config.mjs', '.github/workflows/security-build.yml']
+  push:
+    branches: [main]
+    paths: ['package.json', 'package-lock.json', 'app/**', 'lib/**', 'components/**', 'next.config.mjs', '.github/workflows/security-build.yml']
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify-framework:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
+        with:
+          node-version: '22'
+      - name: Install dependencies without running lifecycle scripts
+        run: npm install --ignore-scripts --no-fund
+      - name: Assert fixed Next.js version is actually installed
+        run: |
+          node -e "const p=require('next/package.json').version; const [a,b,c]=p.split('.').map(Number); if(a!==16||b<4||(b===4&&c<1))throw new Error('Next.js is below 16.4.1: '+p); console.log('Next version: '+p)"
+      - name: Build production site
+        run: npm run build
+      - name: Fail on critical production dependency advisories
+        run: npm audit --omit=dev --audit-level=critical

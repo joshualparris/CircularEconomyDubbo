@@ -1,5 +1,7 @@
 # Council e-waste collection boundary — 20 October 2026
 
+> **25 November update:** [AMR reuse partnership research and prompt](https://github.com/joshualparris/DubboEwaste/blob/main/docs/AMR-DUBBO-REUSE-PARTNERSHIP-RESEARCH-PROMPT-2026-11-25.md) investigates a possible authorised contractor-led pilot. No collection permission, Council endorsement or Repair Café approval has been established. Use the canonical dossier rather than duplicating it.
+
 **Status: research, NOT authority to collect or receive Council e-waste.**
 
 Dubbo Regional Council has declined the proposed separate stream for reusable laptops and desktops at Whylandra at this stage. Council's existing e-waste arrangement continues. A future arrangement would require its own assessment, approvals and documented agreement. Publicly note this status only; the Council correspondence is not reproduced here.

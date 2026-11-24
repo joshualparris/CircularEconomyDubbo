@@ -1,5 +1,7 @@
 # Council e-waste collection boundary — 20 October 2026
 
+> **25 November research execution:** [AMR results](https://github.com/joshualparris/DubboEwaste/blob/main/docs/AMR-DUBBO-REUSE-PARTNERSHIP-RESEARCH-RESULTS-2026-11-25.md) include the 20 November contracts register (no named current e-waste agreement found), 2026 device reuse principles and current NTCRS constraints. No change to collection or Repair Café approval status.
+
 > **25 November update:** [AMR reuse partnership research and prompt](https://github.com/joshualparris/DubboEwaste/blob/main/docs/AMR-DUBBO-REUSE-PARTNERSHIP-RESEARCH-PROMPT-2026-11-25.md) investigates a possible authorised contractor-led pilot. No collection permission, Council endorsement or Repair Café approval has been established. Use the canonical dossier rather than duplicating it.
 
 **Status: research, NOT authority to collect or receive Council e-waste.**

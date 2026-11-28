@@ -1,5 +1,7 @@
 # Dubbo Circular Economy
 
+- **[EcoBatt / EcoCycle — Dubbo electronics supply-chain investigation (28 Nov 2026)](https://github.com/joshualparris/DubboEwaste/blob/main/docs/ECOBATT-ECOCYCLE-DUBBO-RESEARCH-2026-11-28.md)** — 46 source links, named retailer streams, WA regulator-confirmed battery-device pathway, expired Council contract, 100-device reuse pilot and cost scenarios. Dubbo-specific downstream route and corporate ITAD contracts remain unverified.
+
 Standalone public website and volunteer/staff workspace for circular-economy activity in Dubbo, NSW.
 
 ## Audience split

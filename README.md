@@ -4,6 +4,8 @@
 
 - **[EcoBatt / EcoCycle — Dubbo electronics supply-chain investigation (28 Nov 2026)](https://github.com/joshualparris/DubboEwaste/blob/main/docs/ECOBATT-ECOCYCLE-DUBBO-RESEARCH-2026-11-28.md)** — 46 source links, named retailer streams, WA regulator-confirmed battery-device pathway, expired Council contract, 100-device reuse pilot and cost scenarios. Dubbo-specific downstream route and corporate ITAD contracts remain unverified.
 
+- **[EcoCycle / EcoBatt Dubbo — second-pass verification (28 Nov 2026)](https://github.com/joshualparris/DubboEwaste/blob/main/docs/ECOCYCLE-ECOBATT-DUBBO-SUPPLY-CHAIN-RESEARCH-2026-11-28.md)** — where Dubbo phones, computers and batteries go; why the reuse window closes at the retail bin; MobileMuster and Officeworks reuse routes; Whylandra embedded-battery trial; ranked partnership models and [PDF](https://github.com/joshualparris/DubboEwaste/blob/main/reports/ECOCYCLE-ECOBATT-DUBBO-SUPPLY-CHAIN-2026-11-28.pdf).
+
 Standalone public website and volunteer/staff workspace for circular-economy activity in Dubbo, NSW.
 
 ## Audience split
